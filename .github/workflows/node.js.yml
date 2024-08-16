@@ -59,8 +59,7 @@ jobs:
 
       - name: Lint code
         run: npm run lint
-
       - name: Deploy to Vercel
-        run: vercel --prod --QOduC9EuvfIjX5UKaPj8rRt4
+        run: vercel --prod --token=QOduC9EuvfIjX5UKaPj8rRt4
         env:
-          VERCEL_TOKEN: ${{QOduC9EuvfIjX5UKaPj8rRt4}}
+          VERCEL_TOKEN: QOduC9EuvfIjX5UKaPj8rRt4
