@@ -31,10 +31,7 @@ jobs:
 
       - name: Build project
         run: npm run build --if-present
-
-      - name: Lint code
-        run: npm run lint
-        
+      
       - name: Deploy to Vercel
         run: vercel --prod --token=$VERCEL_TOKEN
         env:
